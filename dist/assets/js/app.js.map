@@ -1,1 +1,1 @@
-{"version":3,"names":[],"mappings":"","sources":["app.js"],"sourcesContent":["$( document ).ready(function() {\r\n    console.log( \"ready!\" );\r\n});"],"file":"app.js"}
+{"version":3,"names":[],"mappings":"","sources":["app.js"],"sourcesContent":["$( document ).ready(function() {\r\n    console.log( \"My Gulp4 Starter\" );\r\n});"],"file":"app.js"}
