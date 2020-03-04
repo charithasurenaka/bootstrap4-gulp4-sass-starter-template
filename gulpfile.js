@@ -87,7 +87,7 @@ function scripts() {
       .pipe(browsersync.stream());
 };
 
-// Move the javascript files into our js folder
+// Move the javascript files into your js folder
 function copyjs() {
 return gulp.src(['node_modules/bootstrap/dist/js/bootstrap.min.*', 'node_modules/jquery/dist/jquery.min.js', 'node_modules/popper.js/dist/umd/popper.min.*'])
       .pipe(gulp.dest("dist/assets/js/"))
@@ -101,8 +101,6 @@ function compileHtml() {
             root: 'src/pages/',
             layouts: 'src/layouts/',
             partials: 'src/partials/',
-            helpers: 'src/helpers/',
-            data: 'src/data/'
         }))
         .pipe(gulp.dest('dist'));
 }

@@ -3,13 +3,13 @@
 -	HTML templates with Panini. It compiles a series of HTML pages using a common layout. - [Panini](https://github.com/zurb/panini) 
 
 -	Sass compilation - [gulp-sass](https://www.npmjs.com/package/gulp-sass)
--   prefixing with gulp-autoprefixer using browserslistrc, and JavaScript concatenation - 	 [gulp-autoprefixer](https://www.npmjs.com/package/)
+-   Prefixing with gulp-autoprefixer using browserslistrc, and JavaScript concatenation - 	 [gulp-autoprefixer](https://www.npmjs.com/package/)
 -	Built-in BrowserSync - Will automatically reload your page when files are changed.  - [browser-sync](https://browsersync.io/docs/gulp)
 -	CSS compression - [gulp-cssnano](https://www.npmjs.com/package/gulp-cssnano)
 -   JavaScript compression - [gulp-minify](https://www.npmjs.com/package/gulp-minify)
 -	Image compression - [gulp-imagemin](https://www.npmjs.com/package/gulp-imagemin)
--   Delete files and directories [del](https://www.npmjs.com/package/del)
--   Sourcemaps- Mapping code within a compressed file back to it's original position in a source file[gulp-sourcemaps](https://www.npmjs.com/package/gulp-sourcemaps)
+-   Delete files and directories - [del](https://www.npmjs.com/package/del)
+-   Sourcemaps- Mapping code within a compressed file back to it's original position in a source file - [gulp-sourcemaps](https://www.npmjs.com/package/gulp-sourcemaps)
 
 
 ## Required
@@ -26,28 +26,26 @@
 
 ## Installing:
 
-1.	` cd `  into the Pattern Library and run ` npm install`  in your terminal - this command installs packages listed in the package.json file and any packages that it depends on. Packages are installed in the node_modules directory. 
-a.	Please do not modifiy anything in the `node_modules directory`. Note: the node_modules directory is not kept in source control. 
+1.	` npm install`  installs packages listed in the package.json. Packages are installed in the node_modules folder. 
 
-2.	To start your project run ` gulp `. This step will also create the dist folder. Run the ` gulp watch ` gulp task and bring up the local BrowserSync server and watch for file changes. When changes are ready to be comiited, stop the gulp task, and commit to source control. 
+2.	To start project ` gulp ` to create the dist folder. And run the ` gulp watch ` task runs local BrowserSync server and watch for file changes. 
 
-3.	Your finished static mini site will be created in a folder called dist, viewable at this URL:
-http://localhost:3000 
+3.	Your project can view on this URL: http://localhost:3000 . You can change inside the gulpfile.js ` port: 3000`.
 
-4.	To create compressed, production-ready assets run `gulp build`. This will delete everything in the dist folder and recreate all of your complied files. Never make updates directly into the dist folder as these files get overridden each time. Note: The dist folder is not kept in source control. 
+4.	Run `gulp`. This will delete all files in the dist folder and recreate all of your complied files.  
 
 
 ## Folder Structure:
 
-- `dist/`: Compiled files. Note: Do not modify anything in this directory. Your changes will be overridden every time you run the build command. 
-- `node_modules` Front-end dependencies.
-- `src/` Folder contains all of your core, working files—static assets, pages, templates, etc. These assets are compiled to a distribution folder. This is a completely static HTML site. 
+- `dist/`: Compiled files 
+- `node_modules` Installed Front-end dependencies.
+- `src/` Folder contains all of your core files. 
 - `src/assets/` Sass files, JS files, images, videos and fonts.
-- `src/layouts/` HTML layouts (templates).
-- `src/pages/` Site pages.
-- `src/partials/` Handlebars partials.
-- `gulpfile.js` Task definitions.
-- `package.json` Handles the front-end dependencies.
+- `src/layouts/` HTML layouts.
+- `src/pages/` HTML site pages.
+- `src/partials/` HTML site partials.
+- `gulpfile.js` Task function definitions.
+- `package.json` Front-end dependencies.
 
 
 ## Scss Folder Structure:
@@ -64,4 +62,4 @@ http://localhost:3000
 
 - [Bootstrap](https://getbootstrap.com/)
 - [Gulp](https://gulpjs.org/getting-started)
-- [Sass] (https://sass-lang.com/)
+- [Sass](https://sass-lang.com/)
