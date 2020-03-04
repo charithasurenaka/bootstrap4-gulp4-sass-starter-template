@@ -1,10 +1,15 @@
-# Gulp4-Bootstrap-Starter-Template
-Starter Template for Bootstrap 4 with Sass and Gulp4 task runer.
+# Starter Template for Bootstrap 4 with Sass and Gulp4 task runer
 
--	HTML templates with Panini. It compiles a series of HTML pages using a common layout. These pages can also include HTML partials, external Handlebars helpers, or external data as JSON.
--	Sass compilation, prefixing with Autoprefixer, and JavaScript concatenation
--	Built-in BrowserSync server - Will automatically reload your page when files are changed. 
--	Also add - CSS compression, JavaScript compression, Image compression
+-	HTML templates with Panini. It compiles a series of HTML pages using a common layout. - [Panini](https://github.com/zurb/panini) 
+
+-	Sass compilation - [gulp-sass](https://www.npmjs.com/package/gulp-sass)
+-   prefixing with gulp-autoprefixer using browserslistrc, and JavaScript concatenation - 	 [gulp-autoprefixer](https://www.npmjs.com/package/)gulp-autoprefixer
+-	Built-in BrowserSync - Will automatically reload your page when files are changed.  - [browser-sync](https://browsersync.io/docs/gulp)
+-	CSS compression - [gulp-cssnano](https://www.npmjs.com/package/gulp-cssnano)
+-   JavaScript compression - [gulp-minify](https://www.npmjs.com/package/gulp-minify)
+-	Image compression - [gulp-imagemin](https://www.npmjs.com/package/gulp-imagemin)
+-   Delete files and directories [del](https://www.npmjs.com/package/del)
+-   Sourcemaps- Mapping code within a compressed file back to it's original position in a source file[gulp-sourcemaps](https://www.npmjs.com/package/gulp-sourcemaps)
 
 
 ## Required
@@ -23,9 +28,12 @@ Starter Template for Bootstrap 4 with Sass and Gulp4 task runer.
 
 1.	` cd `  into the Pattern Library and run ` npm install`  in your terminal - this command installs packages listed in the package.json file and any packages that it depends on. Packages are installed in the node_modules directory. 
 a.	Please do not modifiy anything in the `node_modules directory`. Note: the node_modules directory is not kept in source control. 
-2.	To start your project, make sure you are in the Pattern Library folder and run ` gulp `  to start the “default” gulp task and bring up the local BrowserSync server. This step will also create the dist folder for you, run the Gulp tasks specified in the gulpfile.js file, and watch for file changes. When changes are ready to be comiited, stop the default gulp task, and commit to source control. 
+
+2.	To start your project run ` gulp `. This step will also create the dist folder. Run the ` gulp watch ` gulp task and bring up the local BrowserSync server and watch for file changes. When changes are ready to be comiited, stop the gulp task, and commit to source control. 
+
 3.	Your finished static mini site will be created in a folder called dist, viewable at this URL:
 http://localhost:3000 
+
 4.	To create compressed, production-ready assets run `gulp build`. This will delete everything in the dist folder and recreate all of your complied files. Never make updates directly into the dist folder as these files get overridden each time. Note: The dist folder is not kept in source control. 
 
 
@@ -46,14 +54,12 @@ http://localhost:3000
 
 - `src/assets/scss/components/` This is where custom project components go. Import to app.scss folder.
 - `src/assets/scss/mixins/` Custom mixins go here. Should be organized like components. 
-- `src/assets/scss/pages/` Page specific overrides to components. This should be done sparingly. Think of generic UI elements rather than a page specific UI element. If used, these files should be much, much smaller than your component files -  20-30 lines max. Import to app.scss folder.
+- `src/assets/scss/pages/` Page specific overrides to components.
 - `src/assets/scss/_base.scss` Allows you to set base common styles. Import to app.scss folder.
 - `src/assets/scss/app.scss` This is where you will import your custom component files.
 
 
-## Additional Resources:
-- [Sass: Syntactically Awesome Style Sheets](http://sass-lang.com/)
+## Resources:
+
 - [Bootstrap](https://getbootstrap.com/)
-<!-- - [Handlebars](http://handlebarsjs.com/) -->
-- [Panini](https://github.com/zurb/panini) 
 - [Gulp](https://gulpjs.org/getting-started)

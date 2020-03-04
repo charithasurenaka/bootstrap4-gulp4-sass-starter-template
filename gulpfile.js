@@ -5,9 +5,9 @@ const del = require('del');
 const panini = require('panini');
 const sourcemaps = require('gulp-sourcemaps');
 const imagemin = require('gulp-imagemin');
-// const cache = require('gulp-cache');
 const minify = require('gulp-minify');
 const cssnano = require('gulp-cssnano');
+const rename = require('gulp-rename');
 const autoprefixer = require('gulp-autoprefixer');
 
 
@@ -67,6 +67,7 @@ function images() {
             outputStyle: 'nested'
         }).on('error', sass.logError))
         .pipe(cssnano()) // Use cssnano to minify CSS
+        .pipe(rename({suffix: '.min'}))
         .pipe(autoprefixer({
           browserlist: true,
           cascade: false
@@ -80,8 +81,6 @@ function images() {
 function scripts() {
   return gulp.src('src/assets/js/app.js')
       .pipe(sourcemaps.init())
-      //If concatenating more than one JS file
-      // .pipe(concat('app.js'))
       .pipe(sourcemaps.write('./'))
       .pipe(minify())
       .pipe(gulp.dest('dist/assets/js/'))

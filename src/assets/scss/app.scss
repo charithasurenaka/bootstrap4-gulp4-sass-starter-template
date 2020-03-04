@@ -1,6 +1,13 @@
-//Bootstrap styles 
-// @import "node_modules/bootstrap/scss/bootstrap";
+//Bootstrap Functions 
 
+@import "node_modules/bootstrap/scss/functions";
 
+//Global
+@import "mixins/mixins";
+@import "variables";
+@import "bootstrap/bootstrap";
+
+//Site Styles
+@import"pages/pages";
 @import "base";
 
