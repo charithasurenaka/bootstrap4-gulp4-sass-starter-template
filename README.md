@@ -42,7 +42,7 @@ http://localhost:3000
 - `dist/`: Compiled files. Note: Do not modify anything in this directory. Your changes will be overridden every time you run the build command. 
 - `node_modules` Front-end dependencies.
 - `src/` Folder contains all of your core, working files—static assets, pages, templates, etc. These assets are compiled to a distribution folder. This is a completely static HTML site. 
-- `src/assets/` Sass files, JS files, images, and fonts go here.
+- `src/assets/` Sass files, JS files, images, videos and fonts.
 - `src/layouts/` HTML layouts (templates).
 - `src/pages/` Site pages.
 - `src/partials/` Handlebars partials.
