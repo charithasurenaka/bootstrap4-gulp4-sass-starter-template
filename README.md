@@ -3,7 +3,7 @@
 -	HTML templates with Panini. It compiles a series of HTML pages using a common layout. - [Panini](https://github.com/zurb/panini) 
 
 -	Sass compilation - [gulp-sass](https://www.npmjs.com/package/gulp-sass)
--   prefixing with gulp-autoprefixer using browserslistrc, and JavaScript concatenation - 	 [gulp-autoprefixer](https://www.npmjs.com/package/)gulp-autoprefixer
+-   prefixing with gulp-autoprefixer using browserslistrc, and JavaScript concatenation - 	 [gulp-autoprefixer](https://www.npmjs.com/package/)
 -	Built-in BrowserSync - Will automatically reload your page when files are changed.  - [browser-sync](https://browsersync.io/docs/gulp)
 -	CSS compression - [gulp-cssnano](https://www.npmjs.com/package/gulp-cssnano)
 -   JavaScript compression - [gulp-minify](https://www.npmjs.com/package/gulp-minify)
@@ -51,11 +51,12 @@ http://localhost:3000
 
 
 ## Scss Folder Structure:
-
+- `src/assets/scss/bootstrap` This is where boostrap variables go.
 - `src/assets/scss/components/` This is where custom project components go. Import to app.scss folder.
 - `src/assets/scss/mixins/` Custom mixins go here. Should be organized like components. 
 - `src/assets/scss/pages/` Page specific overrides to components.
 - `src/assets/scss/_base.scss` Allows you to set base common styles. Import to app.scss folder.
+- `src/assets/scss/variables.scss` Your custom variables and imported the bootstrap variables.
 - `src/assets/scss/app.scss` This is where you will import your custom component files.
 
 
@@ -63,3 +64,4 @@ http://localhost:3000
 
 - [Bootstrap](https://getbootstrap.com/)
 - [Gulp](https://gulpjs.org/getting-started)
+- [Sass] (https://sass-lang.com/)
